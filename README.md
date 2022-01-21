@@ -43,6 +43,10 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 @OneToMany(mappedBy = "board") //mappedBy 연관관계가 아니라는 표현 FK가 아님.  
 @OneToOne  
 @ManyToOne(fetch = FetchType.EAGER)  
-EAGER 은 반드시 가져와야 함. LAZY 필요할때만 가죠옴.  
-
-
+EAGER 은 반드시 가져와야 함. LAZY 필요할때만 가져옴.  
+  
+3. 더미데이타 
+Insert
+Select 
+Update
+Delete

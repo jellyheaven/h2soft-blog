@@ -1,7 +1,5 @@
 package com.h2soft.blog.model;
 
-
-
 import java.sql.Timestamp;
 import java.util.List;
 
