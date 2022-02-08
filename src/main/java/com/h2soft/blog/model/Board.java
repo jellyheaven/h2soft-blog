@@ -39,14 +39,15 @@ public class Board {
 	@Lob //대용량 
 	private String content; //섬머노트 라이브러리 사용 html 태그 
 	
-	@ColumnDefault("0")
+	/* @ColumnDefault("0") */
 	private int count;
 	
 	@ManyToOne(fetch = FetchType.EAGER) //Many = Board , User = One //EAGER 반드시 가져올게
 	@JoinColumn(name = "userId")
 	private User user; //DB는 오브젝트를 저장할 수 없다 FK 자바는 오브젝트를 저장할 수 있다.
 	
-	@OneToMany(mappedBy = "board" , fetch = FetchType.LAZY) //One Board , Many = Reply //mappedBy 연관관계가 아니라는 표현 FK가 아님.
+	//One Board , Many = Reply //mappedBy 연관관계가 아니라는 표현 FK가 아님.
+	@OneToMany(mappedBy = "board" , fetch = FetchType.LAZY) 
 	private List<Reply> reply;
 	
 	@CreationTimestamp

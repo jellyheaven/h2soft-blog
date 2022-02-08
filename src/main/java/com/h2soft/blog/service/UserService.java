@@ -24,6 +24,8 @@ public class UserService {
 		String encPassword = encoder.encode(rawPassword); //해쉬
 		user.setPassword(encPassword);		
 		user.setRole(RoleType.USER);
+		
+		System.out.println("user>>"+user);
 		userRepository.save(user);
 	}
 }

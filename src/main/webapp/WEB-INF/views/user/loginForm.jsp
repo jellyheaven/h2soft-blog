@@ -4,7 +4,7 @@
 <%@ include file="../layout/header.jsp" %>
 
 <div class="container">
-  <form action="/auth/joinProc" method="post">
+  <form action="/auth/loginProc" method="post">
     <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" id="username" placeholder="사용자를 입력하세요." name="username" >
