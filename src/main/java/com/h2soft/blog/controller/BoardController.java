@@ -26,7 +26,7 @@ public class BoardController {
 	}	
 	
 	//User 권한이 필요
-	@GetMapping(value = "/board/saveform")
+	@GetMapping(value = "/board/saveForm")
 	public String saveForm() {
 		return "board/saveForm";
 	}
